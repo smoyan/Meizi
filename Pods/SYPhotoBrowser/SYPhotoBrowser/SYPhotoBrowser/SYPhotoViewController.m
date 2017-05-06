@@ -68,7 +68,7 @@
             [btn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
             [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             [btn setBackgroundColor:[UIColor grayColor]];
-            btn.tag = i;
+            btn.tag = i-1;
             btn.frame = CGRectMake(gap * i - side / 2, self.view.frame.size.height - side * 2, side, side);
             [btn addTarget:self action:@selector(onMarkButtonClick:) forControlEvents:UIControlEventTouchUpInside];
             [self.view addSubview:btn];
